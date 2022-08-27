@@ -1,5 +1,6 @@
 import { MyStack } from "./MyStack";
 import { StorageStack } from "./StorageStack";
+import { ApiStack } from "./ApiStack";
 import { App } from "@serverless-stack/resources";
 
 /**
@@ -13,5 +14,5 @@ export default function (app) {
       format: "esm",
     },
   });
-  app.stack(StorageStack).stack(MyStack);
+  app.stack(StorageStack).stack(ApiStack).stack(MyStack);
 }
