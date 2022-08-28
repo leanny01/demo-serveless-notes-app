@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "aws-sdk": "^2.1204.0",
+    "paystack": "^2.0.1",
     "uuid": "^8.3.2"
   }
 }
