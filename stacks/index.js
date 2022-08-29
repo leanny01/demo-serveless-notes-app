@@ -2,6 +2,7 @@ import { MyStack } from "./MyStack";
 import { StorageStack } from "./StorageStack";
 import { ApiStack } from "./ApiStack";
 import { AuthStack } from "./AuthStack";
+import { FrontendStack } from "./FrontendStack";
 import { App } from "@serverless-stack/resources";
 
 /**
@@ -15,5 +16,10 @@ export default function (app) {
       format: "esm",
     },
   });
-  app.stack(StorageStack).stack(ApiStack).stack(MyStack).stack(AuthStack);;
+  app
+    .stack(StorageStack)
+    .stack(ApiStack)
+    .stack(MyStack)
+    .stack(AuthStack)
+    .stack(FrontendStack);
 }
